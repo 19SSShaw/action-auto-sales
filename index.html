@@ -9,12 +9,25 @@
         <p>Action Auto Sales cell &mdash; 215-290-0945/215-657-1948</p>
         <p>Hours of Operation &mdash; M-F 8am &mdash; 12pm</p>
         <p>Our Google Page can be found <a href="https://share.google/QuAwYrDXLIXRI6oco">here</a>.</p>
+        <p>Action Auto Sales has been in business since 1972 &mdash; <u>54 years</u>.</p>
     </div>
 
     <div id="cars">
+        <p><u>Action Auto Sales</u> is known for buying + selling collector cars and best known for <u>finding</u> the car of your dreams.</p>
         <div class="car">
             <img src="/IMG_5641.jpeg">
+            <p class="car-title">1967 SS 396 Chevelle</p>
             <p class="price">$75,000.00</p>
+        </div>
+        <div class="car">
+            <img src="/IMG_5563.jpeg">
+            <p class="car-title">1957 Chevrolet</p>
+            <p class="price">$45,000.00</p>
+        </div>
+        <div class="car">
+            <img src="/IMG_5701.jpeg">
+            <p class="car-title">1972 SS 454 Chevelle</p>
+            <p class="price">$80,000.00</p>
         </div>
     </div>
 
@@ -31,6 +44,35 @@
             margin-top: 50px;
             padding: 20px;
             background: white;
+        }
+        #cars {
+            display: flex;
+            max-width: 90%;
+            gap: 15px;
+            margin: 30px auto;
+            padding: 15px;
+        }
+        .car {
+            width: 33%;
+        }
+        .price, .car-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            text-align: center;
+        }       
+        img {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #cars {
+                flex-direction: column;
+            }
+
+            .car {
+                width: 100%;
+            }
         }
     </style>
 </body>
